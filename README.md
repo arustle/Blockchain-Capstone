@@ -19,27 +19,44 @@ zokrates generate-proof
 zokrates export-verifier
 ```
 
-
 ### Minting Tokens
-You can go to [MyEtherWallet](https://www.myetherwallet.com/#contracts) Contract page.
-You will need to enter two pieces of information:
-1. The contract's address.  During the deployment process, the output will list the contract address
-2. The ABI.  JSON files are built during the compile process.  Open the `SolnSquareVerifier.json` file and 
-   locate the `abi` property.  You need to copy this value.
 
+You can go to [MyEtherWallet](https://www.myetherwallet.com/#contracts) Contract page. You will need to enter two pieces
+of information:
 
+1. The contract's address. During the deployment process, the output will list the contract address
+2. The ABI. JSON files are built during the compile process. Open the `SolnSquareVerifier.json` file and locate
+   the `abi` property. You need to copy this value.
 
+### Versions
 
+- Truffle v5.1.57
+- OpenZeppelin v3.3.0
+- Ganache GUI v2.5.4
 
+### Testing
+
+For testing, the Ganache GUI was used and settings in `truffle-config.js` were adjusted for the environment.
+Run `truffle test` to start the tests for the project.
+
+### Token
+
+Name: Dwelling Token Symbol: DWLL
+
+Etherscan:
+https://rinkeby.etherscan.io/address/0xca67a583fb8b93d36332d86f5f2652dd36d3a523
+https://rinkeby.etherscan.io/token/0xca67a583fb8b93d36332d86f5f2652dd36d3a523#balances
 
 Contract Address:
 0xCA67a583fb8b93d36332d86F5F2652Dd36d3A523
 
 OpenSea MarketPlace Storefront Link:
 https://testnets.opensea.io/assets/dwelling-token
-
+https://testnets.opensea.io/assets/0xCA67a583fb8b93d36332d86F5F2652Dd36d3A523/1
+https://testnets.opensea.io/assets/0xCA67a583fb8b93d36332d86F5F2652Dd36d3A523/2
 
 Contract ABI:
+
 ```
 [
     {
@@ -709,7 +726,6 @@ Contract ABI:
     }
   ]
 ```
-
 
 # Project Resources
 
